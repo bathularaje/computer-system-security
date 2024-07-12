@@ -135,6 +135,8 @@ def keyExchange(s):
     serialized_public = clientCreateKeys()
     s.send(serialized_public)
 
+# code for sending the message
+
 def sendFernet(s, data, fernet_key):
     pub = data["message"].encode("utf8")
     client_public = serialization.load_pem_public_key(
