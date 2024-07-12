@@ -4,7 +4,9 @@ from cryptography.hazmat.primitives.asymmetric import ec
 
 import json, sys, base64
 import getpass
-# -*- coding: utf-8 -*-
+#####
+
+####
 
 def createSignature(pathToPrivateKey, prehashed):
     file = open(pathToPrivateKey, "r")
